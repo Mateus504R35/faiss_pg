@@ -1,0 +1,16 @@
+# arquivos de build
+*.o
+*.so
+*.a
+*.bc
+
+# diretórios de build temporários
+build/
+tmp/
+*.log
+
+# arquivos do editor/IDE
+*.swp
+*~
+.vscode/
+.idea/
