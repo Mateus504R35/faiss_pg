@@ -19,3 +19,9 @@ CREATE FUNCTION faiss_knn_l2(query real[],
 RETURNS int[]
 AS 'MODULE_PATHNAME', 'faiss_knn_l2'
 LANGUAGE C STRICT;
+
+-- Busca k-NN lendo vetores da tabela faiss_items(id, embedding)
+CREATE FUNCTION faiss_knn_l2_table(query real[], k integer)
+RETURNS int[]
+AS 'MODULE_PATHNAME', 'faiss_knn_l2_table'
+LANGUAGE C STRICT;
