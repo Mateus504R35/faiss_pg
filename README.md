@@ -26,3 +26,8 @@ Isso serve como base para trabalhos acadêmicos (IC/TCC) e para quem quer entend
 
   ```bash
   sudo apt install postgresql postgresql-server-dev-16
+
+
+git clone --recurse-submodules git@github.com:Mateus504R35/faiss_pg.git
+# ou HTTPS
+# git clone --recurse-submodules https://github.com/Mateus504R35/faiss_pg.git
