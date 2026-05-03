@@ -24,30 +24,5 @@ Isso serve como base para trabalhos acadêmicos (IC/TCC) e para quem quer entend
 - PostgreSQL (testado com 16, mas deve funcionar em versões próximas)
 - Pacotes de desenvolvimento do PostgreSQL:
 
-
-# Comandos
-- Instalar postgresql
   ```bash
   sudo apt install postgresql postgresql-server-dev-16
-
-- Instalar versão específica do Faiss
-  ```bash
-  git clone --recurse-submodules git@github.com:Mateus504R35/faiss_pg.git
-  # ou HTTPS
-  # git clone --recurse-submodules https://github.com/Mateus504R35/faiss_pg.git
-
-- Compilar a biblioteca
-  ```bash
-  cd ~/faiss_pg/third_party/faiss
-  rm -rf build
-  
-  cmake -B build \
-    -DFAISS_ENABLE_GPU=OFF \
-    -DFAISS_ENABLE_PYTHON=OFF \
-    -DBUILD_TESTING=OFF \
-    -DBUILD_SHARED_LIBS=ON \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=$HOME/faiss_vendor_install
-  
-  cmake --build build -j$(nproc)
-  cmake --install build
