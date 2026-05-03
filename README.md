@@ -1,4 +1,4 @@
-# faiss_pg
+# pgfaiss
 
 Extensão experimental do PostgreSQL que integra a biblioteca [Faiss](https://github.com/facebookresearch/faiss) para busca por similaridade em vetores (k-vizinhos mais próximos).
 
